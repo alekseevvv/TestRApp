@@ -88,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
                 .method("POST", body)
                 .addHeader("Content-Type", "application/json")
                 .build();
-        System.out.println("Тело "+ body.toString());
         try( Response response = client.newCall(request).execute()){
             Gson g = new Gson();
 
@@ -97,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
             doConnect(t.getAccessToken());
 
         } catch (IOException e) {
-            System.out.println("Ошибка "+e.getMessage());
             e.printStackTrace();
         }
     }
