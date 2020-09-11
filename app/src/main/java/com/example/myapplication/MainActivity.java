@@ -26,7 +26,6 @@ import okhttp3.Response;
 public class MainActivity extends AppCompatActivity {
     TextView txt2,textView;
     EditText editEmail,editPass;
-    Button btnOk;
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
